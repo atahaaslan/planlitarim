@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+<html>
+<head>
+<style>
+    .container {
+        position: relative;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: bold;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.4);
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="../static/images/image5.png" alt="Your Image">
+        <div class="overlay">
+            <p>PLANLI TARIM NEDİR?</p>
+            <p>Şöyledir böyledir</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}
